@@ -25,6 +25,8 @@ jobs:
    
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
    
+        cd yamdb_final/api_yamdb/
+   
         pip install -r requirements.txt 
 
     - name: Test with flake8 and django tests
@@ -33,7 +35,7 @@ jobs:
         python -m flake8
         
 
-        cd infra_project/
+        cd yamdb_final/
 
         python manage.py test
         
