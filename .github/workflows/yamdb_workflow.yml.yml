@@ -27,7 +27,7 @@ jobs:
    
         pwd
    
-        cd yamdb_final/api_yamdb/
+        cd api_yamdb/
    
         pip install -r requirements.txt 
 
