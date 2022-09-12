@@ -12,6 +12,8 @@ class TestWorkflow:
         yaml = f'{yamdb_workflow_basename}.yaml'
         is_yaml = yaml in os.listdir(root_dir)
 
+        print('root_dir:' + root_dir)
+
         yml = f'{yamdb_workflow_basename}.yml'
         is_yml = yml in os.listdir(root_dir)
 
