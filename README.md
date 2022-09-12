@@ -3,7 +3,7 @@
 ## Проект "YaMDb"
 
 
-![example workflow](https://github.com/Sizeoff/yamdb_final/actions/workflows/yamdb_workflow.yml.yml/badge.svg)
+![example workflow](https://github.com/Sizeoff/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 Проект YaMDb собирает отзывы пользователей на произведения. Произведения делятся на категории: «Книги», «Фильмы»,
 «Музыка». Список категорий может быть расширен администратором (например, можно добавить категорию 
