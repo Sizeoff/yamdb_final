@@ -1,9 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import (
-    User, Review, Comment, Title, Category, Genre
-)
+from .models import Category, Comment, Genre, Review, Title, User
 
 admin.site.register(User, UserAdmin)
 
@@ -17,21 +15,21 @@ class ReviewAdmin(admin.ModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('review', 'author', 'pub_date')
-    ordering = ('review', )
+    ordering = ('review',)
 
 
 @admin.register(Title)
 class TitleAdmin(admin.ModelAdmin):
     list_display = ('name', 'year', 'category')
-    ordering = ('name', )
-    list_filter = ('year', )
+    ordering = ('name',)
+    list_filter = ('year',)
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', )
+    list_display = ('name',)
 
 
 @admin.register(Genre)
 class GenreAdmin(admin.ModelAdmin):
-    list_display = ('name', )
+    list_display = ('name',)

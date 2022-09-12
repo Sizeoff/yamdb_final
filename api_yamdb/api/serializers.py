@@ -1,12 +1,10 @@
 from django.core.exceptions import ValidationError
 from rest_framework import serializers
-
 from reviews.models import Category, Comment, Genre, Review, Title, User
 from reviews.validators import username_validation
 
 
 class AdminSerializer(serializers.ModelSerializer):
-
     class Meta:
         fields = (
             'username', 'email', 'first_name', 'last_name', 'bio', 'role'
@@ -22,7 +20,6 @@ class UserSerializer(AdminSerializer):
 
 
 class SignupSerializer(serializers.ModelSerializer):
-
     class Meta:
         fields = ('username', 'email')
         model = User
@@ -58,8 +55,8 @@ class ReviewSerializer(serializers.ModelSerializer):
             author = self.context['request'].user
             title_id = self.context['view'].kwargs.get('title_id')
             if Review.objects.filter(
-                author=author,
-                title=title_id
+                    author=author,
+                    title=title_id
             ).exists():
                 raise ValidationError(
                     'Вы не можете оставлять больше одного отзыва'
@@ -82,16 +79,14 @@ class CommentSerializer(serializers.ModelSerializer):
 
 
 class CategorySerializer(serializers.ModelSerializer):
-
     class Meta:
-        exclude = ('id', )
+        exclude = ('id',)
         model = Category
 
 
 class GenresSerializer(serializers.ModelSerializer):
-
     class Meta:
-        exclude = ('id', )
+        exclude = ('id',)
         model = Genre
 
 
