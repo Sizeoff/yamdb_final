@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Описание
 ## Проект "YaMDb"
 
@@ -240,3 +241,9 @@ python manage.py loaddata fixtures.json
 
 
 Автор: Владислав Сизов
+=======
+# yamdb_final
+yamdb_final
+
+![example workflow](https://github.com/Sizeoff/yamdb_final/actions/workflows/yamdb_workflow.yml.yml/badge.svg)
+>>>>>>> 27136f561e4fabb7be2a4bbec38ed6c6d0b94602
