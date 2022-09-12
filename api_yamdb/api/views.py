@@ -15,11 +15,12 @@ from api_yamdb.settings import ADMIN_EMAIL
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyViewSet
 from .permissions import (IsAdminModeratorAuthorOnly, IsAdminOnly,
-    IsAdminOrReadOnly)
-from .serializers import (
-    AdminSerializer, CategorySerializer, CommentSerializer, GenresSerializer,
-    ObtainTokenSerializer, ReviewSerializer,
-    SignupSerializer, TitlesPostSerializer, TitlesSerializer, UserSerializer)
+                          IsAdminOrReadOnly)
+from .serializers import (AdminSerializer, CategorySerializer,
+                          CommentSerializer, GenresSerializer,
+                          ObtainTokenSerializer, ReviewSerializer,
+                          SignupSerializer, TitlesPostSerializer,
+                          TitlesSerializer, UserSerializer)
 
 
 class UserViewSet(viewsets.ModelViewSet):
