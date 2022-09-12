@@ -36,8 +36,7 @@ jobs:
         
 
         pwd
-        
-      cd api_yamdb/
+
 
         python manage.py test
         
