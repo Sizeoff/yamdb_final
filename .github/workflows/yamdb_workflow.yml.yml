@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip 
    
         pip install flake8 pep8-naming 
-     
+        pwd
         cd api_yamdb/
 
         pip install -r requirements.txt 
@@ -37,7 +37,7 @@ jobs:
 
         pwd
         
-        cd ../api_yamdb/
+        cd api_yamdb/
 
         python manage.py test
         
