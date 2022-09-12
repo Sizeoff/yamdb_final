@@ -35,7 +35,7 @@ jobs:
         python -m flake8
         
 
-        cd ..
+        pwd
 
         python manage.py test
         
